@@ -1,5 +1,5 @@
 {
-  "name": "jslib",
+  "name": "jrs-lib",
   "version": "0.1.0",
   "dependencies": {
     "@craco/craco": "^7.1.0",

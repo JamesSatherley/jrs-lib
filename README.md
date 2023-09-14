@@ -1,4 +1,4 @@
-# JSLIB
+# JRS-lib
 
 This project was created by James Satherley for personal projects. It is open to anyone to use but isn't particularly recommended
 
@@ -6,7 +6,7 @@ This project was created by James Satherley for personal projects. It is open to
 
 In the project directory, you can run:
 
-### `npm run storybook`
+## `npm run storybook`
 
 Open [http://localhost:6006](http://localhost:6006) to view it in your browser.
 
