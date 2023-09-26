@@ -1,6 +1,6 @@
 {
   "name": "jrs-lib",
-  "main": "src/index.ts",
+  "main": "src/index.js",
   "version": "0.2.0",
   "dependencies": {
     "@craco/craco": "^7.1.0",
