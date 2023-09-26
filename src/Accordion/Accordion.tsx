@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-
-interface Section {
-  title: string;
-  content: string;
-}
-
-interface AccordionProps {
-  sections: Section[];
-}
+import { AccordionProps } from "./AccordionProps";
 
 const Accordion: React.FC<AccordionProps> = ({ sections }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

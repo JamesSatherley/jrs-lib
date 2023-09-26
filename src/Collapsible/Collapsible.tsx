@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-
-interface CollapsibleProps {
-  title: string;
-  children: React.ReactNode;
-}
+import { CollapsibleProps } from "./CollapsibleProps";
 
 const Collapsible: React.FC<CollapsibleProps> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);

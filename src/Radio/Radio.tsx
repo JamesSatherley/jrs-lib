@@ -1,11 +1,7 @@
 import React, { useState } from "react";
+import { RadioProps } from "./RadioProps";
 
-interface RadioGroupProps {
-  options: string[];
-  className: string;
-}
-
-const Radio: React.FC<RadioGroupProps> = ({ options, className = "mr-2" }) => {
+const Radio: React.FC<RadioProps> = ({ options, className = "mr-2" }) => {
   const [selected, setSelected] = useState("");
 
   return (

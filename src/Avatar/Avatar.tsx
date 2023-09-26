@@ -1,11 +1,5 @@
 import React, { FC } from "react";
-
-interface AvatarProps {
-  name: string;
-  bg?: string;
-  colour?: string;
-  scale?: number;
-}
+import { AvatarProps } from "./AvatarProps";
 
 const getInitials = (name: string) => {
   const words = name.split(" ");

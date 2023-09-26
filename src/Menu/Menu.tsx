@@ -1,11 +1,7 @@
-import React, { useState, ReactNode } from "react";
+import React, { useState } from "react";
 import MenuButton from "./MenuButton";
 import MenuItem from "./MenuItem";
-
-interface MenuProps {
-  children: ReactNode;
-  primary?: boolean;
-}
+import { MenuProps } from "./MenuProps";
 
 const Menu: React.FC<MenuProps> = ({ children, primary = false }) => {
   const [isOpen, setIsOpen] = useState(false);

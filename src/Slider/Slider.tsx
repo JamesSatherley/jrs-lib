@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-
-interface SliderProps {
-  min: number;
-  max: number;
-  className?: string;
-}
+import { SliderProps } from "./SliderProps";
 
 const Slider: React.FC<SliderProps> = ({ min, max, className = "" }) => {
   const [value, setValue] = useState(min);

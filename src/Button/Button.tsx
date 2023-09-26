@@ -1,14 +1,5 @@
-import React, { FC, MouseEvent, ReactNode } from "react";
-
-interface ButtonProps {
-  className?: string;
-  type?: "button" | "submit" | "reset";
-  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-  onHover?: (event: MouseEvent<HTMLButtonElement>) => void;
-  children?: ReactNode;
-  primary?: boolean;
-  secondary?: boolean;
-}
+import React, { FC, MouseEvent } from "react";
+import { ButtonProps } from "./ButtonProps";
 
 const Button: FC<ButtonProps> = ({
   className = "",

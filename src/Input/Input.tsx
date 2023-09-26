@@ -1,24 +1,6 @@
-import React, {
-  FC,
-  ChangeEvent,
-  MouseEvent,
-  FocusEvent,
-  useState,
-} from "react";
+import React, { FC, useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-
-interface InputProps {
-  name: string;
-  type?: string;
-  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
-  onClick?: (event: MouseEvent<HTMLInputElement>) => void;
-  onFocus?: (event: FocusEvent<HTMLInputElement>) => void;
-  onBlur?: (event: FocusEvent<HTMLInputElement>) => void;
-  placeholder?: string;
-  className?: string;
-  primary?: boolean;
-  secondary?: boolean;
-}
+import { InputProps } from "./InputProps";
 
 const Input: FC<InputProps> = ({
   name,

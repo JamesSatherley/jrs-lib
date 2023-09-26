@@ -1,19 +1,7 @@
 import React, { FC, MouseEvent } from "react";
-import { AiFillEye } from "react-icons/ai";
+import { IconButtonProps } from "./IconButtonProps";
 
-type IconType = typeof AiFillEye;
-
-interface ButtonProps {
-  className?: string;
-  type?: "button" | "submit" | "reset";
-  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-  onHover?: (event: MouseEvent<HTMLButtonElement>) => void;
-  primary?: boolean;
-  secondary?: boolean;
-  icon: IconType;
-}
-
-const Button: FC<ButtonProps> = ({
+const Button: FC<IconButtonProps> = ({
   className = "",
   type = "button",
   onClick,

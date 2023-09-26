@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-
-interface SwitchProps {
-  defaultOn?: boolean;
-}
+import { SwitchProps } from "./SwitchProps";
 
 const Switch: React.FC<SwitchProps> = ({ defaultOn = false }) => {
   const [isOn, setIsOn] = useState(defaultOn);

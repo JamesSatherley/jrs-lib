@@ -1,9 +1,5 @@
-import React, { useState, ReactNode, ReactElement } from "react";
-
-interface TabsProps {
-  children: ReactNode;
-  primary?: boolean;
-}
+import React, { useState, ReactElement } from "react";
+import { TabsProps } from "./TabsProps";
 
 const Tabs: React.FC<TabsProps> = ({ children, primary = false }) => {
   const [activeIndex, setActiveIndex] = useState(0);

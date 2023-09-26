@@ -1,10 +1,5 @@
 import React from "react";
-
-interface MenuItemProps {
-  label: string;
-  href: string;
-  primary?: boolean;
-}
+import { MenuItemProps } from "./MenuItemProps";
 
 const MenuItem: React.FC<MenuItemProps> = ({ label, href, primary }) => {
   return (

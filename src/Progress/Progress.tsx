@@ -1,11 +1,7 @@
 import React from "react";
+import { ProgressProps } from "./ProgressProps";
 
-interface ProgressBarProps {
-  value: number;
-  max: number;
-}
-
-const ProgressBar: React.FC<ProgressBarProps> = ({ value, max }) => {
+const Progress: React.FC<ProgressProps> = ({ value, max }) => {
   return (
     <div className="flex flex-row items-center">
       <div
@@ -28,4 +24,4 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ value, max }) => {
   );
 };
 
-export default ProgressBar;
+export default Progress;

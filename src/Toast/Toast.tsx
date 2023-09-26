@@ -1,12 +1,5 @@
 import React, { useEffect } from "react";
-
-interface ToastProps {
-  message: string;
-  type: "warning" | "error" | "info";
-  duration: number;
-  isVisible: boolean;
-  setIsVisible: Function;
-}
+import { ToastProps } from "./ToastProps";
 
 const Toast: React.FC<ToastProps> = ({
   message,
