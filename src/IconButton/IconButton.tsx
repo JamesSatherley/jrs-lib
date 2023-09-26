@@ -1,7 +1,7 @@
 import React, { FC, MouseEvent } from "react";
 import { IconButtonProps } from "./IconButtonProps";
 
-const Button: FC<IconButtonProps> = ({
+const IconButton: FC<IconButtonProps> = ({
   className = "",
   type = "button",
   onClick,
@@ -40,4 +40,4 @@ const Button: FC<IconButtonProps> = ({
   );
 };
 
-export default Button;
+export default IconButton;
