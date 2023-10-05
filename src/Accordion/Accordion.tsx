@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AccordionProps } from "./AccordionProps";
 
-const Accordion: React.FC<AccordionProps> = ({ sections }) => {
+export const Accordion = ({ sections }: AccordionProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -26,5 +26,3 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
     </div>
   );
 };
-
-export default Accordion;

@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/react";
-import Tabs from "./Tabs";
+import { Tabs } from "./Tabs";
 declare const meta: Meta<typeof Tabs>;
 export default meta;
 export declare const Default: import("@storybook/types").AnnotatedStoryFn<import("@storybook/react/dist/types-0a347bb9").R, import("@storybook/types").Args>;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SwitchProps } from "./SwitchProps";
 
-const Switch: React.FC<SwitchProps> = ({ defaultOn = false }) => {
+export const Switch = ({ defaultOn = false }: SwitchProps) => {
   const [isOn, setIsOn] = useState(defaultOn);
 
   return (
@@ -20,5 +20,3 @@ const Switch: React.FC<SwitchProps> = ({ defaultOn = false }) => {
     </div>
   );
 };
-
-export default Switch;

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { ToastProps } from "./ToastProps";
 
-const Toast: React.FC<ToastProps> = ({
+export const Toast = ({
   message,
   type,
   isVisible,
   setIsVisible,
   duration = 3000,
-}) => {
+}: ToastProps) => {
   useEffect(() => {
     if (isVisible) {
       const timer = setTimeout(() => {
@@ -44,5 +44,3 @@ const Toast: React.FC<ToastProps> = ({
     </div>
   );
 };
-
-export default Toast;

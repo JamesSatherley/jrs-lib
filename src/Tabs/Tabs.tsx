@@ -1,7 +1,7 @@
 import React, { useState, ReactElement } from "react";
 import { TabsProps } from "./TabsProps";
 
-const Tabs: React.FC<TabsProps> = ({ children, primary = false }) => {
+export const Tabs = ({ children, primary = false }: TabsProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const tabsArray = React.Children.toArray(children) as ReactElement[];
@@ -28,5 +28,3 @@ const Tabs: React.FC<TabsProps> = ({ children, primary = false }) => {
     </div>
   );
 };
-
-export default Tabs;

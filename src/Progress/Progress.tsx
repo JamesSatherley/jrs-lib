@@ -1,7 +1,7 @@
 import React from "react";
 import { ProgressProps } from "./ProgressProps";
 
-const Progress: React.FC<ProgressProps> = ({ value, max }) => {
+export const Progress = ({ value, max }: ProgressProps) => {
   return (
     <div className="flex flex-row items-center">
       <div
@@ -23,5 +23,3 @@ const Progress: React.FC<ProgressProps> = ({ value, max }) => {
     </div>
   );
 };
-
-export default Progress;

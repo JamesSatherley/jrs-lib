@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 
 import { AiFillCaretDown, AiFillLike, AiOutlineUser } from "react-icons/ai";
 
-import IconButton from "./IconButton";
+import { IconButton } from "./IconButton";
 
 const meta: Meta<typeof IconButton> = {
   component: IconButton,

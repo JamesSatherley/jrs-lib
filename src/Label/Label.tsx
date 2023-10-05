@@ -1,8 +1,6 @@
 import React from "react";
 import { LabelProps } from "./LabelProps";
 
-const Label: React.FC<LabelProps> = ({ text, htmlFor }) => {
+export const Label = ({ text, htmlFor }: LabelProps) => {
   return <label htmlFor={htmlFor}>{text}</label>;
 };
-
-export default Label;

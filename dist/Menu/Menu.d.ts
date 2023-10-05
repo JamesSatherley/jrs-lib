@@ -1,4 +1,3 @@
 import React from "react";
 import { MenuProps } from "./MenuProps";
-declare const Menu: React.FC<MenuProps>;
-export default Menu;
+export declare const Menu: ({ children, primary }: MenuProps) => React.JSX.Element;

@@ -1,7 +1,7 @@
-import React, { FC, MouseEvent } from "react";
+import React, { MouseEvent } from "react";
 import { ButtonProps } from "./ButtonProps";
 
-const Button: FC<ButtonProps> = ({
+export const Button = ({
   className = "",
   type = "button",
   onClick,
@@ -9,7 +9,7 @@ const Button: FC<ButtonProps> = ({
   children,
   primary = false,
   secondary = false,
-}) => {
+}: ButtonProps) => {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     if (onClick) {
       onClick(event);
@@ -35,5 +35,3 @@ const Button: FC<ButtonProps> = ({
     </button>
   );
 };
-
-export default Button;

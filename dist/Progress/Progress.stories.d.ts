@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Progress from "./Progress";
+import { Progress } from "./Progress";
 declare const meta: Meta<typeof Progress>;
 export default meta;
 type Story = StoryObj<typeof Progress>;

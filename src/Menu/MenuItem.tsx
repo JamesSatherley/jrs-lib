@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuItemProps } from "./MenuItemProps";
 
-const MenuItem: React.FC<MenuItemProps> = ({ label, href, primary }) => {
+export const MenuItem  = ({ label, href, primary }: MenuItemProps) => {
   return (
     <a
       href={href}
@@ -13,5 +13,3 @@ const MenuItem: React.FC<MenuItemProps> = ({ label, href, primary }) => {
     </a>
   );
 };
-
-export default MenuItem;

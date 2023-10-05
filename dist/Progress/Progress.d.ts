@@ -1,4 +1,3 @@
 import React from "react";
 import { ProgressProps } from "./ProgressProps";
-declare const Progress: React.FC<ProgressProps>;
-export default Progress;
+export declare const Progress: ({ value, max }: ProgressProps) => React.JSX.Element;

@@ -1,4 +1,3 @@
-import { FC } from "react";
+import React from "react";
 import { InputProps } from "./InputProps";
-declare const Input: FC<InputProps>;
-export default Input;
+export declare const Input: ({ name, type, onChange, onClick, onFocus, onBlur, placeholder, className, primary, secondary, }: InputProps) => React.JSX.Element;

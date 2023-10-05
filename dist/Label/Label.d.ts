@@ -1,4 +1,3 @@
 import React from "react";
 import { LabelProps } from "./LabelProps";
-declare const Label: React.FC<LabelProps>;
-export default Label;
+export declare const Label: ({ text, htmlFor }: LabelProps) => React.JSX.Element;

@@ -1,8 +1,8 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { InputProps } from "./InputProps";
 
-const Input: FC<InputProps> = ({
+export const Input = ({
   name,
   type = "text",
   onChange,
@@ -13,7 +13,7 @@ const Input: FC<InputProps> = ({
   className = "!w-36",
   primary = false,
   secondary = false,
-}) => {
+}: InputProps) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -52,5 +52,3 @@ const Input: FC<InputProps> = ({
     </div>
   );
 };
-
-export default Input;

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 import { AvatarProps } from "./AvatarProps";
-declare const Avatar: FC<AvatarProps>;
-export default Avatar;
+export declare const getInitials: (name: string) => string;
+export declare const Avatar: ({ name, bg, colour, scale, }: AvatarProps) => React.JSX.Element;

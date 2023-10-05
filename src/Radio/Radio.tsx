@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RadioProps } from "./RadioProps";
 
-const Radio: React.FC<RadioProps> = ({ options, className = "mr-2" }) => {
+export const Radio = ({ options, className = "mr-2" }: RadioProps) => {
   const [selected, setSelected] = useState("");
 
   return (
@@ -23,5 +23,3 @@ const Radio: React.FC<RadioProps> = ({ options, className = "mr-2" }) => {
     </div>
   );
 };
-
-export default Radio;

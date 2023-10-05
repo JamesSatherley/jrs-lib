@@ -1,4 +1,3 @@
 import React from "react";
 import { SliderProps } from "./SliderProps";
-declare const Slider: React.FC<SliderProps>;
-export default Slider;
+export declare const Slider: ({ min, max, className }: SliderProps) => React.JSX.Element;

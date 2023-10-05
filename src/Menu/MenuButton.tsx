@@ -1,8 +1,6 @@
 import React from "react";
 import { MenuButtonProps } from "./MenuButtonProps";
 
-const MenuButton: React.FC<MenuButtonProps> = ({ children }) => {
+export const MenuButton = ({ children }: MenuButtonProps) => {
   return <>{children}</>;
 };
-
-export default MenuButton;

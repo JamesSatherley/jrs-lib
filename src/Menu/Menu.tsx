@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import MenuButton from "./MenuButton";
-import MenuItem from "./MenuItem";
+import { MenuButton } from "./MenuButton";
+import { MenuItem } from "./MenuItem";
 import { MenuProps } from "./MenuProps";
 
-const Menu: React.FC<MenuProps> = ({ children, primary = false }) => {
+export const Menu = ({ children, primary = false }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const button = React.Children.toArray(children).find(
@@ -29,5 +29,3 @@ const Menu: React.FC<MenuProps> = ({ children, primary = false }) => {
     </div>
   );
 };
-
-export default Menu;

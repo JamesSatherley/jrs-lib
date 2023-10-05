@@ -1,4 +1,3 @@
-import { FC } from "react";
+import React from "react";
 import { IconButtonProps } from "./IconButtonProps";
-declare const IconButton: FC<IconButtonProps>;
-export default IconButton;
+export declare const IconButton: ({ className, type, onClick, onHover, primary, secondary, icon, }: IconButtonProps) => React.JSX.Element;

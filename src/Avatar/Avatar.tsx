@@ -1,19 +1,19 @@
-import React, { FC } from "react";
+import React from "react";
 import { AvatarProps } from "./AvatarProps";
 
-const getInitials = (name: string) => {
+export const getInitials = (name: string) => {
   const words = name.split(" ");
   return words.length < 2
     ? words[0][0]
     : `${words[0][0]}${words[words.length - 1][0]}`;
 };
 
-const Avatar: FC<AvatarProps> = ({
+export const Avatar = ({
   name = "?",
   bg = "#aaaaaa",
   colour = "#222222",
   scale = 1,
-}) => {
+}: AvatarProps) => {
   const scaling = 2.5 * 16 * scale;
   return (
     <div
@@ -30,5 +30,3 @@ const Avatar: FC<AvatarProps> = ({
     </div>
   );
 };
-
-export default Avatar;

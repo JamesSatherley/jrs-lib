@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SliderProps } from "./SliderProps";
 
-const Slider: React.FC<SliderProps> = ({ min, max, className = "" }) => {
+export const Slider = ({ min, max, className = "" }: SliderProps) => {
   const [value, setValue] = useState(min);
 
   return (
@@ -15,5 +15,3 @@ const Slider: React.FC<SliderProps> = ({ min, max, className = "" }) => {
     />
   );
 };
-
-export default Slider;

@@ -1,4 +1,3 @@
 import React from "react";
 import { ToastProps } from "./ToastProps";
-declare const Toast: React.FC<ToastProps>;
-export default Toast;
+export declare const Toast: ({ message, type, isVisible, setIsVisible, duration, }: ToastProps) => React.JSX.Element | null;

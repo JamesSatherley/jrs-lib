@@ -1,15 +1,15 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import Avatar from "./Toast";
+import { Toast } from "./Toast";
 
-const meta: Meta<typeof Avatar> = {
-  component: Avatar,
+const meta: Meta<typeof Toast> = {
+  component: Toast,
   tags: ["autodocs"],
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Avatar>;
+type Story = StoryObj<typeof Toast>;
 
 export const Primary: Story = {
   args: {

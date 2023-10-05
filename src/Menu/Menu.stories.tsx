@@ -1,10 +1,10 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 
-import Menu from "./Menu";
-import MenuItem from "./MenuItem";
-import MenuButton from "./MenuButton"; // Import the MenuButton component
-import Button from "../Button/Button";
+import { Menu } from "./Menu";
+import { MenuItem } from "./MenuItem";
+import { MenuButton } from "./MenuButton"; // Import the MenuButton component
+import { Button } from "../Button/Button";
 
 const meta: Meta<typeof Menu> = {
   component: Menu,
