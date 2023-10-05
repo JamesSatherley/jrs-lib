@@ -31,8 +31,8 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "tsc && npm run build:tailwind",
-    "build:tailwind": "npx postcss src/styles.css -o dist/styles.css"
+    "build": "npx tsc && npm run build:tailwind",
+    "build:tailwind": "npx tailwindcss build src/index.css -o dist/index.css"
   },
   "eslintConfig": {
     "extends": [
@@ -67,7 +67,7 @@
     "autoprefixer": "^10.4.15",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-plugin-storybook": "^0.6.13",
-    "postcss": "^8.4.30",
+    "postcss": "^8.4.31",
     "storybook": "^7.3.2",
     "tailwindcss": "^3.3.3",
     "webpack": "^5.88.2"
