@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { CollapsibleProps } from "./CollapsibleProps";
 
-const Collapsible: React.FC<CollapsibleProps> = ({ title, children }) => {
+export const Collapsible: React.FC<CollapsibleProps> = ({
+  title,
+  children,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -22,5 +25,3 @@ const Collapsible: React.FC<CollapsibleProps> = ({ title, children }) => {
     </div>
   );
 };
-
-export default Collapsible;

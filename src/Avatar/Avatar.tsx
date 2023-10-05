@@ -8,7 +8,7 @@ const getInitials = (name: string) => {
     : `${words[0][0]}${words[words.length - 1][0]}`;
 };
 
-const Avatar: FC<AvatarProps> = ({
+export const Avatar: FC<AvatarProps> = ({
   name = "?",
   bg = "#aaaaaa",
   colour = "#222222",
@@ -30,5 +30,3 @@ const Avatar: FC<AvatarProps> = ({
     </div>
   );
 };
-
-export default Avatar;

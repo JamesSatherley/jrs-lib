@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { ToastProps } from "./ToastProps";
 
-const Toast: React.FC<ToastProps> = ({
+export const Toast: React.FC<ToastProps> = ({
   message,
   type,
   isVisible,
@@ -44,5 +44,3 @@ const Toast: React.FC<ToastProps> = ({
     </div>
   );
 };
-
-export default Toast;

@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { InputProps } from "./InputProps";
 
-const Input: FC<InputProps> = ({
+export const Input: FC<InputProps> = ({
   name,
   type = "text",
   onChange,
@@ -52,5 +52,3 @@ const Input: FC<InputProps> = ({
     </div>
   );
 };
-
-export default Input;
