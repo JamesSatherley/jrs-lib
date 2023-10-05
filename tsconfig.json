@@ -1,19 +1,26 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "strict": true,
     "esModuleInterop": true,
+    "strict": true,
     "skipLibCheck": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "dist",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true, // Set to true to prevent generating JavaScript files during compilation
-    "declaration": true, // Generate type declaration files (.d.ts)
-    "declarationDir": "./types", // Specify the directory for generated type declaration files
-    "sourceMap": true, // Generate source maps for debugging
-    "allowSyntheticDefaultImports": true // Allow imports with default exports from modules with no default export
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"], // Include source files for compilation
-  "exclude": ["node_modules"] // Exclude node_modules directory from compilation
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
 }
