@@ -1,1 +1,2 @@
-export * from "./IconButton/IconButton.tsx";
+import IconButton from "./IconButton";
+export { IconButton };
