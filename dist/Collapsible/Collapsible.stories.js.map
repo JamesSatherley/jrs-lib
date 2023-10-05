@@ -1,1 +1,0 @@
-{"version":3,"file":"Collapsible.stories.js","sourceRoot":"","sources":["../../src/Collapsible/Collapsible.stories.ts"],"names":[],"mappings":"AAEA,OAAO,WAAW,MAAM,eAAe,CAAC;AAExC,MAAM,IAAI,GAA6B;IACrC,SAAS,EAAE,WAAW;IACtB,IAAI,EAAE,CAAC,UAAU,CAAC;CACnB,CAAC;AAEF,eAAe,IAAI,CAAC;AAIpB,MAAM,CAAC,MAAM,OAAO,GAAU;IAC5B,IAAI,EAAE;QACJ,KAAK,EAAE,OAAO;QACd,QAAQ,EAAE,OAAO;KAClB;CACF,CAAC"}
