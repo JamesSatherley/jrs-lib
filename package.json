@@ -1,7 +1,7 @@
 {
   "name": "jrs-lib",
   "main": "src/index.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@storybook/addon-postcss": "^2.0.0",
